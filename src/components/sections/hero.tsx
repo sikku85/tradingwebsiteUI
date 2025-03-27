@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import AlphaVantage from "./AlphaVantage"
 
 export function HeroSection() {
   return (
@@ -47,7 +48,7 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-
+<AlphaVantage></AlphaVantage>
           {/* Right Column - Image */}
           <div className="flex-1 relative">
             <div className="relative w-full h-[400px] lg:h-[450px] blue-glow">

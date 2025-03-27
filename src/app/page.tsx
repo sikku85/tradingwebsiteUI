@@ -6,6 +6,7 @@ import { PricingSection } from "@/components/sections/pricing"
 import { FaqSection } from "@/components/sections/faq"
 import { TestimonialsSection } from "@/components/sections/testimonials"
 import { Footer } from "@/components/ui/footer"
+import AlphaVantage  from "@/components/sections/AlphaVantage" 
 
 export default function Home() {
   return (
