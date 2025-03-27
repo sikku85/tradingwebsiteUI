@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 85%;
+
+  --card: 0 0% 8%;
+  --card-foreground: 0 0% 85%;
+
+  --popover: 0 0% 8%;
+  --popover-foreground: 0 0% 85%;
+
+  --primary: 213 49% 50%;
+  --primary-foreground: 0 0% 95%;
+
+  --secondary: 0 0% 8%;
+  --secondary-foreground: 0 0% 85%;
+
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+
+  --accent: 183 28% 33%;
+  --accent-foreground: 0 0% 95%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 95%;
+
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 213 49% 50%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-tradefinder-primary text-tradefinder-gray-light font-manrope;
+  }
+}
+
+/* Custom styles */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-tradefinder-blue to-tradefinder-teal-light;
+}
+
+.blue-glow {
+  filter: drop-shadow(0 0 10px rgba(67, 114, 190, 0.5));
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center, rgba(67, 114, 190, 0.2) 0%, transparent 70%);
+}
+
+.feature-card {
+  @apply bg-tradefinder-secondary rounded-xl p-6 border border-tradefinder-gray-dark transition-all duration-300;
+}
+
+.feature-card:hover {
+  @apply border-tradefinder-blue shadow-md shadow-tradefinder-blue/20;
+}
